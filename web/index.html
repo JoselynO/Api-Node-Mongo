@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+</head>
+<body>
+    <h1>Hola Mundo Practica 3</h1>
+    <form id="myForm" action="/guardarNombre", method="POST">
+        <label for="nombre">Nombre a guardar:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h1>Busca por nombre</h1>
+    <form id="myForm2" action="/recuperarNombre", method="GET">
+        <label for="nombreEncontrar">Nombre a buscar:</label>
+        <input type="text" id="nombreEncontrar" name="nombreEncontrar" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+</body>
+</html>
